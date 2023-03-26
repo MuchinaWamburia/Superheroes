@@ -1,24 +1,21 @@
-# README
+# SUPERHEROS
+This is a simple Rails API backend for tracking heroes and their superpowers.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Getting Started
+- Clone this repo
+- Run bundle install
+- Run rails db:migrate
+- Run rails db:seed
+- Run rails s
+- Navigate to localhost:3000
 
-Things you may want to cover:
 
-* Ruby version
+## API Endpoints
+GET /heroes: Returns a list of all heroes. GET /heroes/id Returns a hero with the specified id. GET /powers: Returns a list of all powers. GET /powers/id Returns a power with the specified id. PATCH /powers/id Updates the power with the specified id. POST /hero_powers: Creates a new hero power.
 
-* System dependencies
+## Deployed API Endpoints at Render
+GET Heroes: https://superhero-k24z.onrender.com/
 
-* Configuration
+GET Powers: https://superhero-k24z.onrender.com/powers
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+GET Hero Powers: https://superhero-k24z.onrender.com/hero_powers

@@ -17,7 +17,3 @@ HeroPower.create(strength: "Average", hero_id: 1, power_id: 2)
 HeroPower.create(strength: "Weak", hero_id: 2, power_id: 1)
 HeroPower.create(strength: "Average", hero_id: 3, power_id: 2)
 
-Contact.create([
-  { name: 'John Doe', email: 'john@example.com', message: 'Hello, this is a test message.' },
-  { name: 'Jane Doe', email: 'jane@example.com', message: 'Hello, this is another test message.' }
-])

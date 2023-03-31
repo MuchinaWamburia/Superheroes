@@ -29,7 +29,7 @@ link : https://drive.google.com/file/d/1pSSUlH5cgQp58Uh0M0YIVP7R27tM8iX4/view
 - Push to the original branch: git push origin <project_name>/<location>
 - Create the pull request.
 
-# [LICENSE](LICENSE)
+# [License](LICENSE)
 The API is available as open source under the terms of the MIT License
 
 Copyright (c) 2023 MuchinaWamburia

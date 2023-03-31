@@ -1,4 +1,4 @@
-class HerosController < ApplicationController
+class HeroesController < ApplicationController
   def index
     heroes = Hero.all
     render json: heroes.as_json(only: [:id, :name, :super_name])

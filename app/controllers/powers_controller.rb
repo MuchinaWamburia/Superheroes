@@ -9,8 +9,9 @@ class PowersController < ApplicationController
 
   # GET /powers/:id
   def show
-    if @power
-      render json: @power.as_json(except: [:created_at, :updated_at])
+    power = Power.find_by(id: params[:id])
+    if power
+      render json: power.as_json(except: [:created_at, :updated_at])
     else
       render json: { error: "Power not found" }, status: :not_found
     end
@@ -29,16 +30,17 @@ class PowersController < ApplicationController
 
   # PATCH /powers/:id
   def update
-    if @power
-      if @power.update(power_params)
-        render json: @power.as_json(only: [:id, :name, :description])
+    power = Power.find_by(id: params[:id])
+    if power 
+      if power.update(power_params)
+        render json: power.as_json(only: [:id, :name, :description])
       else
-        render json: { errors: @power.errors.full_messages }, status: :unprocessable_entity
+        render json: { errors: power.errors.full_messages }, status: :unprocessable_entity
       end
     else
       render json: { error: "Power not found" }, status: :not_found
     end
-  end
+  end  
 
   private
 
